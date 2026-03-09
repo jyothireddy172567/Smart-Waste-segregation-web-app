@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="mainstyle.css">
+
+</head>
+<body>
+
+   <div class="container-fluid">
+       <div class="row">
+           <div class="col-12">
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://res.cloudinary.com/dwcceyp8v/image/upload/v1772980994/file_000000005ac87208b73877db25119a90_bufbd6.png" class="image" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav" id="Center">
+                            <a class="nav-link active" id="color1" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" id="color2" href="#">Features</a>
+                            <a class="nav-link" id="color3" href="#">Pricing</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="background-image p-5">
+                    
+                   <div class="text-center">
+                             <h1>Eco Sort</h1>
+                             <p>-Smart waste segregation</p>
+                       <h2 class="pb-3">Upload Waste Image</h2>
+                       <input type="file" id="imageInput"/>
+                          
+                       <div class="box">
+                           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAABAlBMVEX///9KVm4AtZT/zANFU2pwd4sAtZCNuLissLlATWf///1XYnpLVW4AuJUAtJJGWnCc2clszbk2waQMqo9MUGz/0QAyeXpGWG9AUHFNT2xAZnQHsJIZnosglIeF2MUAr4w/UW9BYXIYnIrm9/LN7+nt7/TBxcyIjp6Ahpibnqq1ucDb3eFeaX40Q1+OlqHQ09o2R2CtsbpqaWKUhE21mjfFpjKbikp1cV+MgFDctiXnvR2Bd1f1xwylkEc8TXReYmTRqitSW2itlkN5clZvbV7ftiCAeU9YXXlSyLG75dzY8u6ixcHt+fd108Gu4tiW3M3K4+Kx1tGSxr1ctKh4s6+6z8+wA9cLAAAG7ElEQVR4nO3ceV/bNhwGcOeoG1NHECDFa1jsLYRRjsLKXWjLsXUBAtnW9f2/lcm5E0uyLYHkn6zn36Wt/f08Oqw4sywTExMTExMTzdLerPz2SlK23m/vqL7f50y7srvnOGVpcZw954MeggtW+8OB4xZkx9nb3cf/OPhsOwrwcFz3YKut+uaF8+pAhd0gjruv+vbF0n7jqNPD2dtULSCS9mJZqR7221ZtIBDF3ev7wR2/W+r1Cm4Z6vqxuafaLoyzpdqBL23V894ga0CXj/cZGLphyrsgd8/ZKB/OAcT6bWakfHj1gDj7bWWmfYU91RYcyY4exNG7c6DkoIAYpwLu7CU7Ux9ee+FNfttZ4oO3dfk9Q3yFN+D4KoZPJIZPKIZPKIZPKIZPKIZPKIZPKIZPKIZPKIZPKIZPKIZPKIZPKIZPKEJ8bvDF84IgeK4D61zxecHHw6Pj46OTU9crPItgjvjc8tl5qd5P6dPJYrBm+FIk+HheL41T/3ThGb7Ecb1vl1N6YT574uM3L3zeRWk+9c9fDF+yuF8vI3yl+kVg+BLpeVdRvVLpUngDkw++IDp0B8NXtH754POu6kS/S9HZLxd87jVh5uvX71awfrngCy7I5SvVbwQ3f/ngO6HxHRu++Hg3FL7SueDkZ/gMX1yog7dkBm8SPvK2L9z4Gb740Dcup8yNi7sa91SSC76Cd8yzbXbfrS/G+OWDr3zLMXbdd43qesyhdD743C+UIwO2XrEY55cPPvLsx5z5+nqxfjnhKwSnUb1DxtAd6sX55YWv4J3OHdbXDxnrxlgv9HPpfrnhKwTXVzNfFf2RpHtxfvnhK7jB7dXwi8r6n2esr8pn9Jh+OeLDBQyuv90cHd2cXTPfM5jTY/nlig8vAoEXhvmZiB7DL198SULQo/tpySfy/dkqSY/qpycfY6sR90d/aVRJfBQ/Dfncn96uxD3qp9aj+OnH566+LVY5/Rh6ZD/t+HD3qkXE58fUC/0i53+68YXd698qh1+MHv5Lf53vn2Z8/e5x+q0uxugR+qcXH+7eWCC1X7xe2L9ZP634Jt1L75egewQ/nfimu5faL5nevJ9GfLPdw0mx/ibsXsRPH77RmsvVv+R6+C/9eeKnDV+keyn6566l0Jvx04XPdaPdG/RvLdbPXVxJozftpwnf/KqRpn+p9ab89OCjda9/qzF+HHoTPy34qN1L4MelN/bTgQ93jynA8uPUG/lpwMfuHtuPW2/oB58vrnssP3eNW2/gB54vvnt0P4HuDf2g8yXpHs1PqHsDv79g8yXrHtlPsHsDP9B8SbtH9BPtHt6ToypkvuTdi/qJjVyEkO+jYnEZMF+a7s37YT0BOyzX6d1t3Le6qjVSZ8yXrnuzfmJ6y0v3qhW4M+JL271pPwE9v9qDa2eN+dJ3b+KH11wuOjzjVZfC8QpuxptkwMfTvZEfd/cQasKb7ObS5+Pr3tCvwLfm4jkP9LAdJOTj7d7Ab52vt6in+tafI5iPv3sDCK4/Zd+pvvNnScUR6R5vUFGDgRum4oh1jy86THv9VBzTPYFUFHSvuEHd6kHbAj4g6Xj2E+VaWncbXWCAS7L5UPGRfCXdmu/7xd4CKED5fMvkR43ush3+Z/8Rkp50vioib/i6yyi8ElT0m5BmQMl81UaNeBlYb/QRvwlHTzZfuGch6XQQGn8CUv9k85HL15m5CkD9k8vXQKQNc3fSvT4xoP7J5UMdEksn8rNBMP2Ty+eTdsw1NH8NcPonee5rRa+gRrwCIP2TyofHbiTR7vU/CaR/cvmiJ8zk7oWfBdE/uXyRdbfpU/nIE2XGInfum5/6WqzTMlRUIpIqMvlQ5B2WO38KKxJ/QwlJmkjli+z6pvjGH5pAGr6Z2JEntns0JLPvRmcGdq03MvWzv3ZI5WtG/vnagAo9WSM+/FQ89POjH89cpPJF9y3dZd9u2OHx/aR9FvbDC7JPfMDLWBTzWQtPtVqztWBNtw8P6sdaDcT36FKXDtZ7GdPtgxPFc98kQPmiW4eX42PJAOWTu++jByifLZGP9eY8TL4niXzE475RYPIRHpteLojxFAaTryuVj7FzgclnEf/vji/Fx1g7gPI9SuRjTX5A+f6WOHpR44n6HAuUz+L/PRWHH/0YACrfPzLrR3zLoB+ofNaKzAcPKg5YPjz7SQOkvxU+c2AFKv/KfHCj6Yz5KO/uZjjfZfoRj0EXrMfhNdhLsu9ePBL9aO823w9nEATxV5bf5S2/NmV0PqEwdva/nCTltTS/Bvl3HQtWq9np9CB2L8z+ui3p90WIdfACNPhh4Mc69X2dZ/bT5zdtM9n/b8W3ZURLv/BxdOfHw8Prl8+D6ns1MTExMTExMTHRNP8DXPsA+L2jGDMAAAAASUVORK5CYII="
+                           class="w-100"
+                           id="previewImage"  />
+                       </div>
+
+                       <button class="btn btn-primary" id="button">Detect Waste Type</button>
+
+                       <div class="p-3 mt-3 Analysed">
+                           <h2>Prediction Result</h2>
+                           <p id="Analysed">No Image analyzed </p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+  
+   <script src="main.js"></script>
+</body>
+</html>
